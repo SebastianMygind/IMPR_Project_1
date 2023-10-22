@@ -77,7 +77,7 @@ double DO_NEXT_OP (char OPERATOR, double ACCUMULATOR, double INPUT, int UNARY) {
             case '!':
                 if (ACCUMULATOR == 0.0) {
                     printf("FEJL: nul division!\n");
-                    return 0;
+                    return ACCUMULATOR;
                 }
                 else
                     return (1/ACCUMULATOR);
@@ -97,7 +97,7 @@ double DO_NEXT_OP (char OPERATOR, double ACCUMULATOR, double INPUT, int UNARY) {
             case '/':
                 if (INPUT == 0.0){
                     printf("Fejl: nul division!\n");
-                    return 0;
+                    return ACCUMULATOR;
                 }
                 else
                     return (ACCUMULATOR / INPUT);
