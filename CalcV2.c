@@ -68,7 +68,7 @@ double DO_NEXT_OP (char OPERATOR, double ACCUMULATOR, double INPUT, int UNARY) {
             case '#':
                 if (ACCUMULATOR < 0) {
                     printf("Kan ikke tage kvadratroden af et negativt tal!\n");
-                    return 0;
+                    return ACCUMULATOR;
                 }
                 else
                     return sqrt(ACCUMULATOR);
